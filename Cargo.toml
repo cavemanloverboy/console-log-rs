@@ -1,0 +1,15 @@
+[package]
+name = "console-log-rs"
+version = "0.2.0"
+edition = "2021"
+description = "replaces console.log in a rust module with println!"
+license = "MIT OR Apache-2.0"
+authors = ["Cavey Cool <caveycool@gmail.com>"]
+
+[dependencies]
+proc-macro2 = "1.0.86"
+quote = "1.0.36"
+syn = { version = "2.0.75", features = ["full", "visit-mut"] }
+
+[lib]
+proc-macro = true
